@@ -1,4 +1,4 @@
-Learning GO:
+GO:
 
 A small blog application with two parts:
 
