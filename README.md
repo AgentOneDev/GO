@@ -33,7 +33,6 @@ Logging in works like this:
 
 Create an empty PostgreSQL database, then run `backend/schema.sql` against it:
 
-- bash
 psql "postgres://USER:PASSWORD@localhost:5432/DATABASE" -f backend/schema.sql
 
 This creates three tables: `users`, `sessions`, and `posts`.
@@ -60,7 +59,6 @@ The file must be in the `frontend/` folder itself. Next.js does not load
 
 4. Install the frontend packages
 
--bash
 cd frontend
 npm install
 
@@ -68,7 +66,6 @@ npm install
 
 Start the API in one terminal:
 
--bash
 cd backend
 go run .
 
@@ -76,7 +73,6 @@ It prints `API running at http://localhost:8080`.
 
 Start the website in a second terminal:
 
--bash
 cd frontend
 npm run dev
 
