@@ -23,8 +23,8 @@ Logging in works like this:
 
 # Requirements
 
-- [Go](https://go.dev/doc/install) 1.27 or newer (see `backend/go.mod`)
-- [Node.js](https://nodejs.org/) 20.9 or newer
+- [Go](https://go.dev/doc/install)
+- [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/download/)
 
 # Setup
