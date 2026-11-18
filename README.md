@@ -150,8 +150,8 @@ backend/ :
 
 frontend/
   src/app/  :
+  
     actions.ts          Every call to the Go API (server-only code).
-    
     layout.tsx          Wraps every page (header and page width).
     page.tsx            Home page: published posts.
     login/              Login page.
@@ -165,8 +165,8 @@ frontend/
     globals.css         Tailwind CSS and theme colors.
     
   src/lib/ :
+  
     types.ts            The User, Post, and ActionState types.
-    
     format.ts           Date formatting.
     
   components/ :
