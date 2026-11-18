@@ -38,15 +38,15 @@ psql "postgres://USER:PASSWORD@localhost:5432/DATABASE" -f backend/schema.sql
 
 This creates three tables: `users`, `sessions`, and `posts`.
 
-# 2. Configure the backend
-Copy `backend/.env.example` to `backend/.env` and fill in your database URL:
+# Configure the backend
+2. Copy `backend/.env.example` to `backend/.env` and fill in your database URL:
 
 
-DATABASE_URL=postgres://USER:PASSWORD@localhost:5432/DATABASE - Connection string for PostgreSQL. Required.
-COOKIE_SECURE=false -  Set to `true` in production so cookies are only sent over HTTPS
-FRONTEND_ORIGIN=http://localhost:3000 - The only website allowed to call the API from a browser (CORS).
+   DATABASE_URL=postgres://USER:PASSWORD@localhost:5432/DATABASE - Connection string for PostgreSQL. Required.
+   COOKIE_SECURE=false -  Set to `true` in production so cookies are only sent over HTTPS
+   FRONTEND_ORIGIN=http://localhost:3000 - The only website allowed to call the API from a browser (CORS).
 
-Each variable must be on its own line, written as `NAME=value`.
+   Each variable must be on its own line, written as `NAME=value`.
 
 
 3. Configure the frontend
