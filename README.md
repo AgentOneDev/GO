@@ -1,7 +1,7 @@
 A small blog application with two parts:
 
-backend — a JSON API written in Go, storing data in PostgreSQL.
-frontend — a Next.js website that talks to the API.
+backend : a JSON API written in Go, storing data in PostgreSQL.
+frontend : a Next.js website that talks to the API.
 
 Visitors can read published posts. Registered users can log in, write posts,
 save them as drafts, publish or unpublish them, edit them, and delete them.
