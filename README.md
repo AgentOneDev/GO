@@ -1,6 +1,6 @@
 GO:
 
-A small blog application with two parts:
+A full architecture GO practice application with two parts:
 
 Backend : a JSON API written in Go, storing data in PostgreSQL.
 
