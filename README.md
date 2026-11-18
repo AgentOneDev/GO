@@ -117,7 +117,7 @@ Errors are returned as JSON in the form `{ "error": "message" }`.
 
 # Project structure
 
-backend/
+backend/ :
   main.go               Starts the server and registers every route
   database.go           Opens the PostgreSQL connection
   schema.sql            Creates the database tables
@@ -135,7 +135,7 @@ backend/
   posts_*.go            One file per post endpoint
 
 frontend/
-  src/app/
+  src/app/  :
     actions.ts          Every call to the Go API (server-only code)
     layout.tsx          Wraps every page (header and page width)
     page.tsx            Home page: published posts
