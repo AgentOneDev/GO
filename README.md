@@ -119,24 +119,39 @@ Errors are returned as JSON in the form `{ "error": "message" }`.
 
 backend/ :
   main.go               Starts the server and registers every route.
+  
   database.go           Opens the PostgreSQL connection.
+  
   schema.sql            Creates the database tables.
+  
   cors.go               Decides which website may call the API from a browser.
+  
   health.go             GET /health.
+  
   handlers.go           POST /api/preview.
+  
   auth_json.go          Helpers for reading and writing JSON.
+  
   auth_users.go         The User type and email validation.
+  
   auth_register.go      POST /api/auth/register.
+  
   auth_login.go         POST /api/auth/login.
+  
   auth_logout.go        POST /api/auth/logout.
+  
   auth_sessions.go      Creates sessions and session cookies.
+  
   auth.middleware.go    requireAuth, meHandler, trustedBrowserRequest.
+  
   posts.go              The Post type and post validation.
+  
   posts_*.go            One file per post endpoint.
 
 frontend/
   src/app/  :
     actions.ts          Every call to the Go API (server-only code).
+    
     layout.tsx          Wraps every page (header and page width).
     page.tsx            Home page: published posts.
     login/              Login page.
@@ -151,8 +166,10 @@ frontend/
     
   src/lib/ :
     types.ts            The User, Post, and ActionState types.
+    
     format.ts           Date formatting.
     
   components/ :
     ui/                 Basic building blocks (button, card, input, ...).
+    
     *.tsx               Forms and the site header.
